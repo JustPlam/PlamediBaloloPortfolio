@@ -197,7 +197,37 @@ body {
 }
 
 
+.ux img {
+    width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+
+.ux h2 {
+  font-family: 'Scrapbooking', sans-serif;
+                                                
+}
+
+.ux p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Wix Madefor Display', sans-serif;
+                                                
+
+                                                
+}
+
+.ux {
+  text-align: center;
+ 
+}
 
 /* Fade-in for main texts */
 .fade-in {
