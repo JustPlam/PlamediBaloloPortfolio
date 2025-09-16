@@ -1,10 +1,329 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her Journey</title>
+    <link rel="icon" type="image/png" href="images/butterfly.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+    <link href="https://fonts.cdnfonts.com/css/lovely-groovy" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nekluch-trial" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/unbounded" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/wix-madefor-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/scrapbooking" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/varuna" rel="stylesheet">     
+    <link href="https://fonts.cdnfonts.com/css/lt-neo-rounded" rel="stylesheet">
+                   
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="images/butterfly.png" alt="Logo" width="100" height="50" class="me-2">
+            
+          </a>
+      
+          <!-- Toggler -->
+          <button class="navbar-toggler rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biography">About Me</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Creative IT Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Featured Work</a>
+                    </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+         <!-- Main Section -->
+    <section class="main" id="home">
+  <div class="parallax-bg" id="parallax-bg"></div>
+
+  <div class="container main-text text-black">
+    <div class="row ">
+      <div class="main-text1">
+        <h2><small>"Hello, my name is <strong>Plamedi Balolo</strong> and "</small></h2>
+        <div>
+            <h1><strong>Welcome to my Portfolio</strong></h1>
+            <h6><small>Graphic/UX/UI/Web Designer & Marketing Executive</small></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        
+
+
+
+
+
+<section id="biography" class="container py-5">
+  <div class="row align-items-center">
+
+  
+
+    <!-- Text Column -->
+    <div class="col-sm-8 text-start bio">
+      <h2>About Me</h2>
+      <p style="max-width: 600px;">
+        I’m a 2024 Computing with IT Management graduate with a diverse creative and technical background. Alongside my degree, I’ve built 5+ years of experience in web design and have been exploring UX/UI design through self-study this year. 
+        <br><br>
+        I’m also a self-taught graphic designer with a strong eye for visuals, and since 2021 I’ve run my own balloon artistry business, where I manage both the creative side and the marketing strategy. My journey blends technology, design, and entrepreneurship—skills I now bring together to create engaging digital experiences.
+      </p>
+    </div>
+  <!-- Image Column with Polaroid + Fade-In -->
+    <div class="col-sm-4 text-center">
+      <div class="fade-in-on-scroll">
+        <img src="images/about.png" class="img-fluid expandable-img bio-image" alt="Biography Image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="container py-5">
+  <div class="row align-items-center cskills">    
+    <h2>Creative IT Skills</h2>
+      
+<!-- Image Column with Polaroid + Fade-In -->
+   <div class="row g-3">
+            <div class="col-sm-4 col-6 polaroid">
+              <img src="images/htmlcssjs.jpg" class="expandable-img img-fluid fade-in-on-scroll " alt="Photo 1">
+            </div>
+            <div class="col-sm-4 col-6">
+              <img src="images/Canva.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 2">
+            </div>
+            <div class="col-sm-4 col-6">
+              <img src="images/tableau.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 3">
+            </div>
+            <div class="col-sm-4 col-6">
+              <img src="images/microsoft-office-app.jpg" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 4">
+            </div>
+            <div class="col-sm-4 col-6">
+              <img src="images/figma.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 5">
+            </div>
+            <div class="col-sm-4 col-6">
+              <img src="images/adobee.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 6">
+            </div>
+     </div>
+
+  </div>
+</section>
+
+
+
+    
+
+    <!-- Fullscreen image overlay -->
+<div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgInModal">
+    <div id="caption" class="caption-text"></div>
+  </div>
+  </section>
+           
+     
+   
+    <!-- Featured Work -->
+    <section id="experience" class="bg-light py-5 work">
+        <div class="container">
+          <h2 class="display-4"><br>Featured Work</h2>
+          <h3>Logos</h3>
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="images/PB Designs - 1.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 1">
+              <p>Used Canva</p>
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="images/rejoice.jpg" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 2">
+              <p>Used Canva</p>
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="images/adidas.JPG" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 3">
+              <p>Used Adobe Illustrator</p>
+            </div>
+            </div>
+
+        <h3><br>Advertisement Posters/Flyers</h3>
+        <h4><br>Vaseline</h4>
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="images/Vaseline1.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 1">
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="images/Vaseline2.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 2">
+            </div>
+            <div class="col-md-3 col-6">
+              <img src="images/Vaseline.3.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 3">
+            </div>
+          </div>
+
+            <p><br></p>
+
+            <h4><br>Oreo Ice-Cream</h4>
+            <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <img src="images/oreo.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 5">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="images/oreoad.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 6">
+            </div>
+            </div>
+
+            <h4><br>Church Event</h4>
+            <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <img src="images/church1.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 5">
+            </div>
+            <div class="col-md-3 col-6">
+                <img src="images/church2.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 6">
+            </div>
+          
+            </div>
+
+            <h4><br>Campaigns</h4>
+            <div class="row g-3">
+            <div class="col-md-3 col-6">
+                <img src="images/CLOVENI BALOLO.png.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 5">
+            </div>
+          
+            </div>
+
+              <h3><br> Websites (HTML,CSS and JavaScript) </h3>
+          <div class="row g-2  web">
+            <div class="col-md-3 col-6">
+              <img src="images/cloveni.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 1">
+              <a href ="https://justplam.github.io/HerJourney-CloveniPortfolio/">Click here to view the website,</a></p>
+            </div>
+
+            <h3><br>UX/UI Design</h3>
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="images/Google (Instagram Post (45)).png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 1">
+              <h4>Google Keep (Notes App)</h4>
+              
+              <h5>Problem:</h5>
+              <p>Google Keep is useful, but the layout can feel a little messy, and it can be hard to organize notes quickly.</p>
+              
+              <h5>Design Idea:</h5>
+              <p>I created a cleaner design that makes folders the main focus. Each folder (Priority, Work, Ideas, Personal) has its own color, making it easy to spot and organize notes. A simple search bar and a quick-add button help users find and create notes faster.</p>
+              
+              <h5>Outcome:</h5>
+              <p>The new design is more organized, colorful, and user-friendly. It helps users save time, stay focused, and keep their notes neat in one place.</p>
+            </div>
+          
+        </div>
+
+           <h3><br> Tableau (Microsoft Excel)</h3>
+          <div class="row g-3">
+            <div class="col-md-3 col-6">
+              <img src="images/videogames.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 2">
+              <p> Using Tableau and Python(Numpy)</p> 
+              <a href ="https://docs.google.com/document/d/1f6aB3b5qsqsd03tOAxUq-AR7wE155GCmiCJo3tgc2Qc/edit?usp=sharing">Click here to view the website,</a>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <img src="images/videogames2.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 1">
+              <p> (Tableau Only)(Project 2)</p>
+              <a href ="https://docs.google.com/document/d/1ZjLm0MvyurnHQZVLOdUzvJK-D2-F15B2jMXd8OgTFuA/edit?usp=sharing">Click here to view the website,</a>
+            </div>
+            
+
+              <h3><br> Microsoft PowerPoint </h3>
+          <div class="row g-3">
+            <h4>Naruto Shippuden Game Presentation</h4>
+            <div class="col-md-3 col-6">
+              <img src="images/Naruto.png" class="expandable-img img-fluid fade-in-on-scroll" alt="Photo 1">
+              <a href ="https://1drv.ms/p/c/356cd6be3a2f31e1/EeExLzq-1mwggDXlBAAAAAABTMqO5dvRNTV180SncQyzKg?e=bhtj8F">Click here to view the website,</a>
+            </div>
+            
+              </div>
+
+     </div>
+      </section>
+
+    <!--Contact-->
+      <section id="contact" class="py-5">
+        <div class="container text-center">
+          <h2 class="display-4">Contact</h2>
+          <p>Click on the icons below to contact me!</p>
+      
+          <div class="row justify-content-center">
+            <!-- LinkedIn -->
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+              <a href="https://www.linkedin.com/in/cloveni-balolo-938649175/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon fade-in-on-scroll">
+              </a>
+              <p class="mt-2 mb-1 fw-bold">LinkedIn</p>
+              <small class="d-block">Plamedi Balolo</small>
+              <small class="d-block">https://www.linkedin.com/in/plamedibalolo/</small>
+            </div>
+      
+            <!-- Email -->
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+              <a href="mailto:clovenibalolo@hotmail.co.uk">
+                <img src="images/email.png" alt="Email" class="contact-icon fade-in-on-scroll">
+              </a>
+              <p class="mt-2 mb-1 fw-bold">Email</p>
+              <small class="d-block">plamedibalolo18@hotmail.com</small>
+            </div>
+      
+            <!-- Phone -->
+            <div class="col-6 col-sm-4 col-md-3 mb-4">
+              <a href="tel:+353894584530">
+                <img src="images/phone.png" alt="Phone" class="contact-icon fade-in-on-scroll">
+              </a>
+              <p class="mt-2 mb-1 fw-bold">Phone</p>
+              <small class="d-block">+353894026912</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- Modal -->
+        <div id="galleryModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="expandedImg">
+          </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Plamedi Balolo. All rights reserved.</p>
+    </footer>
+    
+    <script src="index.js"></script>
+
 </body>
 </html>
